@@ -22,12 +22,13 @@ func GetTranslator() Translator {
 		"u": struct{}{},
 	}
 	punctualMarks := map[string]struct{}{
-		",": struct{}{},
-		".": struct{}{},
-		"?": struct{}{},
-		"!": struct{}{},
-		":": struct{}{},
-		";": struct{}{},
+		",":  struct{}{},
+		".":  struct{}{},
+		"?":  struct{}{},
+		"!":  struct{}{},
+		":":  struct{}{},
+		";":  struct{}{},
+		"\"": struct{}{},
 	}
 	return PigLatinTranslator{vowelLatters: englishVowelLatters, punctualMarks: punctualMarks}
 }

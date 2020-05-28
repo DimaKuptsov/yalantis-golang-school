@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	inputString := "ANY! raNDoM,striNG foooorr encodE; decode AND TranSlate to PiG?Latin"
+	inputString := "ANY! raNDoM,s\"triNG\" \"foooorr\" enc'odE; decode AND TranSlate to PiG?Latin"
 	fmt.Println(inputString)
 	encrypter := encrypting.GetEncrypter()
 	encruptedString := encrypter.Encrypt(inputString)
