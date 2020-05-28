@@ -9,7 +9,6 @@ import (
 func main() {
 	inputString := "ANY! raNDoM,striNG foooorr encodE; decode AND TranSlate to PiG?Latin"
 	fmt.Println(inputString)
-	fmt.Scanln(&inputString)
 	encrypter := encrypting.GetEncrypter()
 	encruptedString := encrypter.Encrypt(inputString)
 	fmt.Println(encruptedString)
